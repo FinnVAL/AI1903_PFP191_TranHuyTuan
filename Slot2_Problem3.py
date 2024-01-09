@@ -1,9 +1,9 @@
 f = input("Nhập vào 1 dãy số: ")
-n = list(map(int,f.split()))
 if len(f) == 0:
     print("Dãy số trống")
 else:
     try:
+        n = list(map(int,f.split()))
         unique = set(n)
         result = list(unique)
         result.sort()
